@@ -1,5 +1,5 @@
 # Transaction Portfolio Calculator 
-# Answers Obtained for given transactions.json
+## Answers Obtained for given transactions.json
 - Portfolio Value - 45,68,788.7004
 - Portfolio Gains - 11,92,570.9704
 - XIRR for portfolio - 64.87%
@@ -18,7 +18,7 @@ For Linux:
 `source ./virtualenv/bin/activate`
 - install packages using requirements.txt file `pip install -r requirements.txt`
   
-  ## Run
+## Run
 - cd into the project root folder
 - Activate virtual env like mentioned above
 - You can choose how to calculated NAV(net asset values) values by 2 methods:
@@ -26,7 +26,7 @@ For Linux:
   2. by using mstarpy library
 - Now you can calculate your Total Portfolio and Portfolio gains or XIFF of portfolio
 
-# Working of Code:
+## Working of Code:
 - Sorting dataTransaction in file by date
 - Process Transactions by FIFO method per scheme
 - Fetching NAV(net asset values) using ISIN of scheme
