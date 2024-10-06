@@ -16,4 +16,21 @@ For Linux:
   ## Run
 - cd into the project root folder
 - Activate virtual env like mentioned above
+- You can choose how to calculated NAV(net asset values) values by 2 methods:
+- 1. by using the data in dtSummary
+  2. by using mstarpy library
+- Now you can calculate your Total Portfolio and Portfolio gains or XIFF of portfolio
+
+# Working of Code:
+- Sorting dataTransaction in file by date
+- Process Transactions by FIFO method per scheme
+- Fetching NAV(net asset values) using ISIN of scheme
+- Calulating Portfolio Value = sum (units of scheme x NAV of scheme)
+- Caluting Portfolio Gains = sum (( remaining unit of scheme x Current NAV ) - Amount of money spent in purchasing scheme)
+- Calulating XIRR using the portfolio value
+  
+# Answers Obtained for given transactions.json
+- Portfolio Value - 45,68,788.7004
+- Portfolio Gains - 11,92,570.9704
+- XIRR for portfolio - 64.87%
  
