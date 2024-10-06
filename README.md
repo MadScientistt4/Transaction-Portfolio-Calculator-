@@ -1,4 +1,9 @@
 # Transaction Portfolio Calculator 
+# Answers Obtained for given transactions.json
+- Portfolio Value - 45,68,788.7004
+- Portfolio Gains - 11,92,570.9704
+- XIRR for portfolio - 64.87%
+  
 ## Setup
 - Install python3 if not installed already
 - Clone the repository using: `git clone https://github.com/MadScientistt4/Transaction-Portfolio-Calculator-.git`
@@ -29,8 +34,5 @@ For Linux:
 - Caluting Portfolio Gains = sum (( remaining unit of scheme x Current NAV ) - Amount of money spent in purchasing scheme)
 - Calulating XIRR using the portfolio value
   
-# Answers Obtained for given transactions.json
-- Portfolio Value - 45,68,788.7004
-- Portfolio Gains - 11,92,570.9704
-- XIRR for portfolio - 64.87%
+
  
