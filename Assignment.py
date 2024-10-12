@@ -67,7 +67,7 @@ class PortfolioManager:
     def process_trxns(self):
         for info in self.trxns:
             """folio is NOT unique in data, so using schemeName instead"""
-            folio = info["schemeName"]
+            folio = info["schemeName"] + info["amcName"]
             units = float(info["trxnUnits"])
             trxnAmount = float(info["trxnAmount"])
             purchase_price = float(info["purchasePrice"]) if info["purchasePrice"] else 0
@@ -110,7 +110,7 @@ class PortfolioManager:
     def fetch_nav_from_dtSummary(self):
         for info in self.dtSummary:
             nav = float(info["nav"])
-            folio = info["schemeName"]
+            folio = info["schemeName"] + info["amcName"]
             self.nav_scheme_mapping[self.folio_isin_mapping[folio]] = nav
 
     def fetch_nav_from_mstarpy(self):
